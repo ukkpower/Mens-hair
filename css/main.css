@@ -75,6 +75,10 @@ button:active,
   background-color: #628e73;
 }
 
+.page-title {
+  color: #D89D55;
+}
+
 /* Font Settings */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
