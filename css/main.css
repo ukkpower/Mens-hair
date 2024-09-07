@@ -20,6 +20,11 @@ h1, h2, h3, h4 {
   font-style: normal;
 }
 
+a {
+  color: #628e73;
+  text-decoration-color: #628e73 !important;
+}
+
 button,
 .btn {
     background-color: #628e73;
@@ -81,12 +86,41 @@ button:active,
   border-color: #F9E7CB !important
 }
 
+.form-container {
+  background-image: url('../imgs/blob-bg.svg'); /* Path to your SVG */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Ensure it covers the form area */
+  padding: 3rem; /* Add padding to ensure content doesn't overlap with the background */
+  border-radius: 8px; /* Optional: Add some rounding to the container */
+  position: relative; /* Keep the form content above the background */
+}
+
+.form-container::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* Adjust the top margin */
+  bottom: -50px; /* Adjust the bottom margin */
+  left: -50px; /* Adjust the left margin */
+  right: -50px; /* Adjust the right margin */
+  background-image: url('imgs/blob-bg.svg');
+  background-size: contain; /* Ensure the full SVG is shown */
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1; /* Puts the SVG behind the content */
+}
+
+.translate-middle-custom {
+  transform: translate(-50%, -50%) rotate(45deg); /* Combine translate and rotate */
+  transition: transform 0.5s ease; /* Optional: smooth transition */
+}
+
 .bg-custom-green {
   background-color: #628e73;
 }
 
 .bg-custom-mustard {
-  background-color: #D89D55;
+  background-color: #F9E7CB;
 }
 
 .bg-custom-light {
