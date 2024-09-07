@@ -7,14 +7,14 @@ body {
     font-weight: 400;
     font-style: normal;
     background: rgb(255,255,255);
-    background: linear-gradient(14deg, rgba(255,255,255,1) 25%, rgba(250,227,191,1) 100%);
+    background: linear-gradient(14deg, rgba(255,255,255,1) 25%, rgb(250, 227, 191) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
@@ -42,6 +42,16 @@ button:active,
   --bs-btn-padding-x: 1.25rem;
   --bs-btn-font-size: calc(1.26rem + 0.12vw);
   --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+
+.custom-display {
+  font-size: 1.7rem;
+  font-weight: 300; /* Optional: Match the font weight of Bootstrap display classes */
+  line-height: 1.2; /* Optional: Adjust line height */
+}
+
+.custom-padding {
+  padding-right: 6rem; 
 }
 
 /* Cards */
@@ -73,6 +83,14 @@ button:active,
 
 .bg-custom-green {
   background-color: #628e73;
+}
+
+.bg-custom-mustard {
+  background-color: #D89D55;
+}
+
+.bg-custom-light {
+  background-color: #fbecd5;
 }
 
 .page-title {
