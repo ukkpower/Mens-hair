@@ -173,6 +173,13 @@ button:active,
   color: #ffffff;
 }
 
+.img-cropped {
+  width: 200px; /* Set the width to 200px */
+  height: 250px; /* Set the height to 250px */
+  object-fit: cover; /* Crop and cover the area */
+  display: block; /* Ensure the image does not have extra spacing */
+}
+
 /* Font Settings */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
